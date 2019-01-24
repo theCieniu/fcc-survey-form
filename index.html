@@ -9,7 +9,7 @@
 	    <meta name="author" content="Paulina Weiher">
 	     <meta name="viewport" content="width=device-width, initial-scale=1">
 	      <link rel="stylesheet" href="styles.css">
-	       <link rel="icon" href="" type="image/ico">
+	       <link rel="icon" href="favicon.png" type="image/ico">
   </head>
 
 
@@ -28,7 +28,8 @@
 
 <!--User Story #3: I can see a form with id="survey-form". -->
       <form id="survey-form">
-<ul>
+
+<ol>
 
 
 <!--User Story #12: Inside the form element,
@@ -68,21 +69,38 @@ I can see placeholder text that gives me a description or instructions for each 
 <li>
     <label for="design">How do you rate this page DESIGN?</label>
         <br>
-      Good &nbsp;<span>
-      <input type="range" name="design" value="design" id="design">
-            </span>&nbsp;
-      Bad</li>
+      <div class="design-range">Good&nbsp;
+      <input type="range" name="design" value="design" id="design" min="1" max="5" step="1" type="number">
+          <datalist id="design">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </datalist>
+        &nbsp;Bad</div>
+      </li>
 
 
 <!--User Story #13: Inside the form element, I can select a field from one or more groups
  of radio buttons. Each group should be grouped using the name attribute. -->
-<li> <label for="code">How do you rate this page <a href="https://github.com/theCieniu/surveyform" target="_blank">CODE</a>?</label>
-                            <ul>
-                  <li><input type="radio" id="code" name="code" value="perfect">Perfect</li>
-                  <li><input type="radio" id="code" name="code" value="good">Clean and good</li>
-                  <li><input type="radio" id="code" name="code" value="ok">Ok</li>
-                  <li><input type="radio" id="code" name="code" value="mistakes">Few mistakes</li>
-                  <li><input type="radio" id="code" name="code" value="bad">Bad, need to rewrite</li>
+<li> <label for="code">How would you rate this page <a href="https://github.com/theCieniu/surveyform" target="_blank">CODE</a>?</label>
+                            <ul class="ul-list">
+                  <li><input type="radio" id="code-perfect" name="code" value="perfect">
+                    <label for="code-perfect">Perfect</label>
+                    </li>
+                  <li><input type="radio" id="code-good" name="code" value="good">
+                      <label for="code-good">Clean and good</label>
+                    </li>
+                  <li><input type="radio" id="code-ok" name="code" value="ok">
+                    <label for="code-ok">Ok</label>
+                    </li>
+                  <li><input type="radio" id="code-mistakes" name="code" value="mistakes">
+                    <label for="code-mistakes">Few mistakes</label>
+                    </li>
+                  <li><input type="radio" id="code-bad" name="code" value="bad">
+                    <label for="code-bad">Bad, need to rewrite</label>
+                    </li>
                                 </ul>
                               </li>
 
@@ -90,20 +108,35 @@ I can see placeholder text that gives me a description or instructions for each 
 <!--User Story #14: Inside the form element, I can select several fields from a
 series of checkboxes, each of which must have a value attribute. -->
 <li> <label for="githubrate">How would you rate my GitHub profile @theCieniu?</label>
-            <ul>
-        <li><input type="checkbox" id="githubrate" name="githubrate" value="good">Good
-      <li><input type="checkbox" id="githubrate" name="githubrate" value="promising">Promising
-      <li><input type="checkbox" id="githubrate" name="githubrate" value="interesting">Interesting
-      <li><input type="checkbox" id="githubrate" name="githubrate" value="mistakes">Full od mistakes
-      <li><input type="checkbox" id="githubrate" name="githubrate" value="boring">Boring
-      <li><input type="checkbox" id="githubrate" name="githubrate" value="typical">Typical
-      <li><input type="checkbox" id="githubrate" name="githubrate" value="other">Other  <input type="text" name="profile" value="describe your opinion">
+            <ul class="ul-list">
+        <li><input type="checkbox" id="githubrate-good" name="githubrate" value="good">
+          <label for="githubrate-good">Good</label>
+
+      <li><input type="checkbox" id="githubrate-promising" name="githubrate" value="promising">
+        <label for="githubrate-promising">Promising</label>
+
+      <li><input type="checkbox" id="githubrate-interesting" name="githubrate" value="interesting">
+        <label for="githubrate-interesting">Interesting</label>
+
+      <li><input type="checkbox" id="githubrate-mistakes" name="githubrate" value="mistakes">
+        <label for="githubrate-mistakes">Full od mistakes</label>
+
+      <li><input type="checkbox" id="githubrate-boring" name="githubrate" value="boring">
+        <label for="githubrate-boring">Boring</label>
+
+      <li><input type="checkbox" id="githubrate-typical" name="githubrate" value="typical">
+        <label for="githubrate-typical">Typical</label>
+
+      <li><input type="checkbox" id="githubrate-other" name="githubrate" value="other">
+        <label for="githubrate-other">Other</label>
+
+        <input type="text" name="profile" placeholder="describe your opinion" id="describe">
         </ul>
     </li>
 
 <!--User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
 <li> <label for="comment">Do you have any additional comments, tips or recommendations?</label>
-              <textarea id="comment" name="comment" rows="5" cols="50" placeholder="Write your comments"></textarea></li>
+              <textarea id="comment" name="comment" rows="2" cols="20" placeholder="Write your comments"></textarea></li>
 
 
 <!--User Story #4: Inside the form element, I am required to enter my name in a field with id="name". -->
@@ -117,6 +150,7 @@ I can see placeholder text that gives me a description or instructions for each 
         <br>
               <label for="name-" id="name-label">Name:</label>
               <input name="name" type="text" placeholder="Name" required id="name">
+              <br>
               <label for="email" id="email-label">E-mail:</label>
           <input type="email" name="email" placeholder="name@mail.com" required id="email"></li>
           <li>
@@ -125,13 +159,14 @@ I can see placeholder text that gives me a description or instructions for each 
             </label>
             </li>
 
-      </ul>
+      </ol>
 
 
 <!--User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs. -->
-            <button type="submit" name="submit" id="submit">Submit!</button>
-            <button type="reset" name="reset" id="reset">Reset form</button>
-
+            <div class="buttons">
+              <button type="submit" name="submit" id="submit">Submit!</button>
+              <button type="reset" name="reset" id="reset">Reset form</button>
+            </div>
         </form>
       </main>
 

@@ -71,22 +71,194 @@ blockquote:hover {
 
 /* ======== FORM ======== */
 
+input {
+  box-sizing: border-box;
+  padding: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 1.5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2rem;
+  outline:none;
+}
+
+input #describe {
+  padding: 0;
+  margin-left: 0.5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1em;
+}
+
+ol li {
+  padding-bottom: 2em;
+  line-height: 1.5em;
+}
+
+ul li {
+  list-style: none;
+  padding-bottom: 0.5em;
+  line-height: 1rem;
+  }
+
+ol li::marker {
+  color: var(--accent);
+  }
+
+select {
+  box-sizing: border-box;
+  padding: 0.5em;
+  margin: 1em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2rem;
+  outline:none;
+}
+
+input, select {
+  border:none;
+  border-bottom: solid;
+  border-width: thick;
+  border-color: var(--accent);
+}
+
+input:focus {
+  border:none;
+  border: solid;
+  border-width: thick;
+  border-color: var(--bcgcolor);
+  outline:none;
+  }
+
+  input:hover {
+    border:none;
+    border: solid;
+    border-width: thick;
+    border-color: var(--bcgcolor);
+    }
+
 textarea {
-  border-color: var(--accent)
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+  border: none;
+  border: solid;
+  border-width:medium;
+  border-color: var(--accent);
   padding: 1em;
   margin: 1em auto 1em auto;
   word-wrap: break-word;
+  font-size: 1.2rem;
+  outline:none;
+  width:100%;
 }
 
+textarea:focus {
+  border:none;
+  border: solid;
+  border-width: thick;
+  border-color: var(--bcgcolor);
+  outline:none;
+}
+
+textarea:hover {
+  border:none;
+  border: solid;
+  border-width: thick;
+  border-color: var(--bcgcolor);
+}
+
+#dropdown:active {
+  box-sizing: border-box;
+  border:none;
+  border: solid;
+  border-width: thick;
+  border-color: var(--bcgcolor);
+  outline:none;
+}
+
+#dropdown:hover {
+  box-sizing: border-box;
+  border:none;
+  border: solid;
+  border-width: thick;
+  border-color: var(--bcgcolor);
+}
+
+.design-range {
+  box-sizing: border-box;
+  display:flex;
+  box-sizing: border-box;
+  justify-content: center;
+  border: solid;
+  border-width: medium;
+  border-color: var(--accent);
+  padding:0.5em;
+  padding-top:1em;
+  margin-top: 1em;
+  }
 
 
+.buttons {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  }
+
+button {
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+  padding:0.5em;
+}
+
+#submit {
+  border: none;
+  background-color: var(--accent);
+  color:var(--neutral);
+  border-radius: 0.5em;
+  box-shadow: 0.1em 0.1em 1em var(--neutral);
+  font-weight: bold;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  }
+
+#submit:hover {
+  background-color: var(--bcgcolor);
+  color:white;
+}
+
+#submit:focus {
+outline:none;
+  }
+
+#submit:active {
+  background-color: white;
+  color:var(--bcgcolor);
+  outline:none;
+}
+
+#reset {
+  border: none;
+  background-color: #dddddd;
+  color:var(--neutral);
+  border-radius: 0.5em;
+  box-shadow: 0.1em 0.1em 1em var(--neutral);
+  }
+
+  #reset:hover {
+    background-color: var(--neutral);
+    color:white;
+  }
+
+  #reset:active {
+    background-color: var(--bcgcolor);
+    color:white;
+    outline:none;
+  }
 
 
-
-
-
-
-
+#reset:focus {
+    outline:none;
+      }
 
 /* ========== FOOTER ====== */
 
@@ -100,7 +272,8 @@ footer {
   margin:0;
   margin-top: 3rem;
   width:100vw;
-  box-shadow: 0 1em 2em var(--neutral);
+  box-shadow: 0 -0.1em 1em var(--neutral);
+  border-radius: 1em 1em 0 0;
   }
 
 footer a {
