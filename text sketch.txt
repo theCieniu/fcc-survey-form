@@ -1,0 +1,44 @@
+
+
+For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
+
+
+nside the form element, I can select an option from a dropdown that has corresponding id="dropdown".'
+
+----------------------------------------------------------------
+
+
+
+Hi! My goal is to become a front-end developer and I'm on my journey to learn all necessary skills. I need your help! Could you please rate this page and my GitHub repositories? This feedback will be much appreciated, and such support would help me fix my mistakes and develop my coding skills. Thank you in advance! Paulina 
+
+Visit my GitHub at 
+
+What’s your relationship with coding? 
+I’m a total beginner 
+It’s my hobby
+I’m an IT student 
+I’m looking for my first job 
+I have first job as developer 
+I’m an experienced developer 
+
+
+
+How do you rate this page design?
+Good 1 2 3 4 5 Bad 
+
+How do you rate this page code?
+Good 1 2 3 4 5 Bad 
+
+
+
+
+
+Do you have any additional comments, tips of recommendations? 
+
+Send me your name and e-mail address so I could report you about my learning progress. See you soon! 
+Name 
+E-mail 
+Rodo checkbox 
+I agree that Paulina Weiher may collect, use and disclose my personal data which I have provided in this form, for sending marketing materials. 
+Submit! 
+
