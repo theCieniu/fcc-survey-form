@@ -1,22 +1,22 @@
 body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  --bcgcolor:#FF6F61;
-  --accent:#00bbaa;
-  --neutral:#444444;
+  --bcgcolor: #FF6F61;
+  --accent: #00bbaa;
+  --neutral: #444444;
   background-image: linear-gradient(var(--bcgcolor), white);
   background-attachment: fixed;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 h1 {
-  color:white;
+  color: white;
   text-align: center;
   font-family: 'Pattaya', 'Open Sans Condensed', sans-serif;
   font-size: 4rem;
   text-shadow: .08em .05em .2em var(--neutral);
-  }
+}
 
 main {
   background-color: white;
@@ -34,13 +34,13 @@ main {
 }
 
 main a {
-  color:#000000;
+  color: #000000;
   text-decoration: none;
 }
 
 main a:hover {
   text-decoration: underline;
-  color:black;
+  color: black;
 }
 
 blockquote {
@@ -52,25 +52,24 @@ blockquote {
   margin: 2em auto 3em auto;
   width: 20em;
   max-width: 60vw;
-  padding:0.5em;
+  padding: 0.5em;
   box-shadow: .1em .1em 1em var(--neutral);
 }
 
 blockquote a {
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
 blockquote a:hover {
   text-decoration: underline;
-  }
+}
 
 blockquote:hover {
-  background-color:var(--bcgcolor);
+  background-color: var(--bcgcolor);
 }
 
 /* ======== FORM ======== */
-
 input {
   box-sizing: border-box;
   padding: 0.5em;
@@ -78,7 +77,7 @@ input {
   margin-right: 1.5em;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.2rem;
-  outline:none;
+  outline: none;
 }
 
 input #describe {
@@ -97,11 +96,11 @@ ul li {
   list-style: none;
   padding-bottom: 0.5em;
   line-height: 1rem;
-  }
+}
 
 ol li::marker {
   color: var(--accent);
-  }
+}
 
 select {
   box-sizing: border-box;
@@ -109,56 +108,56 @@ select {
   margin: 1em;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.2rem;
-  outline:none;
+  outline: none;
 }
 
 input, select {
-  border:none;
+  border: none;
   border-bottom: solid;
   border-width: thick;
   border-color: var(--accent);
 }
 
 input:focus {
-  border:none;
+  border: none;
   border: solid;
   border-width: thick;
   border-color: var(--bcgcolor);
-  outline:none;
-  }
+  outline: none;
+}
 
-  input:hover {
-    border:none;
-    border: solid;
-    border-width: thick;
-    border-color: var(--bcgcolor);
-    }
+input:hover {
+  border: none;
+  border: solid;
+  border-width: thick;
+  border-color: var(--bcgcolor);
+}
 
 textarea {
   box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
   border: none;
   border: solid;
-  border-width:medium;
+  border-width: medium;
   border-color: var(--accent);
   padding: 1em;
   margin: 1em auto 1em auto;
   word-wrap: break-word;
   font-size: 1.2rem;
-  outline:none;
-  width:100%;
+  outline: none;
+  width: 100%;
 }
 
 textarea:focus {
-  border:none;
+  border: none;
   border: solid;
   border-width: thick;
   border-color: var(--bcgcolor);
-  outline:none;
+  outline: none;
 }
 
 textarea:hover {
-  border:none;
+  border: none;
   border: solid;
   border-width: thick;
   border-color: var(--bcgcolor);
@@ -166,16 +165,16 @@ textarea:hover {
 
 #dropdown:active {
   box-sizing: border-box;
-  border:none;
+  border: none;
   border: solid;
   border-width: thick;
   border-color: var(--bcgcolor);
-  outline:none;
+  outline: none;
 }
 
 #dropdown:hover {
   box-sizing: border-box;
-  border:none;
+  border: none;
   border: solid;
   border-width: thick;
   border-color: var(--bcgcolor);
@@ -183,17 +182,19 @@ textarea:hover {
 
 .design-range {
   box-sizing: border-box;
-  display:flex;
-  box-sizing: border-box;
+  display: flex;
   justify-content: center;
   border: solid;
   border-width: medium;
   border-color: var(--accent);
-  padding:0.5em;
-  padding-top:1em;
+  padding: 0.5em;
+  padding-top: 1em;
   margin-top: 1em;
-  }
+}
 
+input #design {
+  border: none;
+}
 
 .buttons {
   box-sizing: border-box;
@@ -201,87 +202,148 @@ textarea:hover {
   justify-content: space-around;
   margin-left: 10vw;
   margin-right: 10vw;
-  }
+}
 
 button {
   box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.5rem;
-  padding:0.5em;
+  padding: 0.5em;
 }
 
 #submit {
   border: none;
   background-color: var(--accent);
-  color:var(--neutral);
+  color: var(--neutral);
   border-radius: 0.5em;
   box-shadow: 0.1em 0.1em 1em var(--neutral);
   font-weight: bold;
   padding-left: 0.8em;
   padding-right: 0.8em;
-  }
+}
 
 #submit:hover {
   background-color: var(--bcgcolor);
-  color:white;
+  color: white;
 }
 
 #submit:focus {
-outline:none;
-  }
+  outline: none;
+}
 
 #submit:active {
   background-color: white;
-  color:var(--bcgcolor);
-  outline:none;
+  color: var(--bcgcolor);
+  outline: none;
 }
 
 #reset {
   border: none;
   background-color: #dddddd;
-  color:var(--neutral);
+  color: var(--neutral);
   border-radius: 0.5em;
   box-shadow: 0.1em 0.1em 1em var(--neutral);
-  }
+}
 
-  #reset:hover {
-    background-color: var(--neutral);
-    color:white;
-  }
+#reset:hover {
+  background-color: var(--neutral);
+  color: white;
+}
 
-  #reset:active {
-    background-color: var(--bcgcolor);
-    color:white;
-    outline:none;
-  }
-
+#reset:active {
+  background-color: var(--bcgcolor);
+  color: white;
+  outline: none;
+}
 
 #reset:focus {
-    outline:none;
-      }
+  outline: none;
+}
 
 /* ========== FOOTER ====== */
-
 footer {
   background-color: var(--accent);
-  color:white;
+  color: white;
   text-align: center;
   position: relative;
   bottom: 0;
-  padding:0.5em;
-  margin:0;
+  padding: 0.5em;
+  margin: 0;
   margin-top: 3rem;
-  width:100vw;
+  width: 100vw;
   box-shadow: 0 -0.1em 1em var(--neutral);
   border-radius: 1em 1em 0 0;
-  }
+}
 
 footer a {
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
   color: var(--neutral);
+}
+
+/* ========= MEDIA QUERY ========*/
+@media (max-width:500px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    font-size: 1rem;
+    padding: 0.1em 1em 0.3em 2em;
+    border-radius: 2em;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 2em;
+    border-width: medium;
+  }
+
+  p {
+    margin-left: -0.8em;
+    padding-left: 0.1em;
+  }
+
+  blockquote {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  form {
+    margin-left: -2.5em;
+    padding-left: 0.1em;
+  }
+
+  input {
+    padding: 0.5em;
+    margin-left: 0.1em;
+    margin-right: 0.3em;
+    font-size: 1em;
+  }
+
+  select {
+    padding: 0.3em;
+    margin: 0;
+    font-size: 1em;
+  }
+
+  textarea {
+    font-size: 1em;
+  }
+
+  .buttons {
+    margin-top: -0.5em;
+    padding-bottom: 2em;
+  }
+
+  button {
+    font-size: 1.2em;
+    padding: 0.2em;
+  }
+
+  footer a {
+    text-decoration: underline
+  }
 }
