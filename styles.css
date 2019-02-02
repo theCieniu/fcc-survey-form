@@ -19,16 +19,12 @@ h1 {
 }
 
 main {
-  background-color: white;
-  color: var(--neutral);
-  border: solid;
-  border-width: thick;
-  border-radius: 3em;
-  border-color: var(--accent);
-  margin-left: 15vw;
-  margin-right: 15vw;
-  margin-bottom: 4em;
   font-size: 1.2rem;
+  color: var(--neutral);
+  background-color: white;
+  border: thick solid var(--accent);
+  border-radius: 3em;
+  margin: 1em 15vw 4em;
   padding: 2em 3em 3em 3em;
   box-shadow: 0 0 2rem var(--neutral);
 }
@@ -118,19 +114,9 @@ input, select {
   border-color: var(--accent);
 }
 
-input:focus {
-  border: none;
-  border: solid;
-  border-width: thick;
-  border-color: var(--bcgcolor);
+input:focus, input:hover {
+  border: thick solid var(--bcgcolor);
   outline: none;
-}
-
-input:hover {
-  border: none;
-  border: solid;
-  border-width: thick;
-  border-color: var(--bcgcolor);
 }
 
 textarea {
@@ -148,48 +134,29 @@ textarea {
   width: 100%;
 }
 
-textarea:focus {
-  border: none;
-  border: solid;
-  border-width: thick;
-  border-color: var(--bcgcolor);
+textarea:focus, textarea:hover {
+  border: thick solid var(--bcgcolor);
   outline: none;
 }
 
-textarea:hover {
-  border: none;
-  border: solid;
-  border-width: thick;
-  border-color: var(--bcgcolor);
-}
-
-#dropdown:active {
+#dropdown:active, #dropdown:hover {
   box-sizing: border-box;
-  border: none;
-  border: solid;
-  border-width: thick;
-  border-color: var(--bcgcolor);
+  border: thick solid var(--bcgcolor);
   outline: none;
-}
-
-#dropdown:hover {
-  box-sizing: border-box;
-  border: none;
-  border: solid;
-  border-width: thick;
-  border-color: var(--bcgcolor);
 }
 
 .design-range {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  border: solid;
-  border-width: medium;
-  border-color: var(--accent);
+  border: medium solid var(--accent);
   padding: 0.5em;
   padding-top: 1em;
   margin-top: 1em;
+}
+
+.design-range:hover, .design-range:active {
+  border: medium solid var(--bcgcolor);
 }
 
 input #design {
@@ -263,6 +230,7 @@ button {
 /* ========== FOOTER ====== */
 footer {
   background-color: var(--accent);
+  width: 100%;
   color: white;
   text-align: center;
   position: relative;
@@ -270,7 +238,6 @@ footer {
   padding: 0.5em;
   margin: 0;
   margin-top: 3rem;
-  width: 100vw;
   box-shadow: 0 -0.1em 1em var(--neutral);
   border-radius: 1em 1em 0 0;
 }
